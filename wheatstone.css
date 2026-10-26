@@ -1,0 +1,28 @@
+/* Puente de Wheatstone · acentos propios */
+.stage .wire{fill:none;stroke:var(--fg3);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.stage .res{fill:none;stroke:var(--fg);stroke-width:2.2;stroke-linejoin:round}
+.stage .res.x{stroke:var(--c3)}
+.stage .res.adj{stroke:var(--gold)}
+.stage .flow{fill:none;stroke:var(--acc);stroke-width:3;stroke-dasharray:2 12;stroke-linecap:round;opacity:.9}
+.stage .node{fill:var(--fg2)}
+.stage text{font-family:var(--f-mono);fill:var(--fg2);font-size:13px}
+.stage text.lb{font-family:var(--f-disp);font-size:17px;fill:var(--fg);font-weight:600}
+.stage .cbody{fill:var(--bg);stroke:var(--fg2);stroke-width:2}
+.decades{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.dec{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:12px;background:var(--bg2);border:1px solid var(--line)}
+.dec .k{font:600 11px/1 var(--f-mono);color:var(--fg3)}
+.dec .d{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font:600 20px/1 var(--f-mono);color:var(--gold);
+  background:radial-gradient(circle at 35% 30%,var(--glass2),var(--bg));border:2px solid var(--line2);position:relative}
+.dec .pm{display:flex;gap:4px}
+.dec .pm button{all:unset;cursor:pointer;width:26px;height:24px;display:grid;place-items:center;border-radius:6px;border:1px solid var(--line2);font:700 14px/1 var(--f-mono);color:var(--fg2)}
+.dec .pm button:hover{border-color:var(--gold);color:var(--fg)}
+.dec .pm button:focus-visible{outline:2px solid var(--gold)}
+.galv svg{display:block;width:100%;height:auto}
+.galv .face{fill:var(--glass2);stroke:var(--line2)}
+.galv .tick{stroke:var(--fg2);stroke-width:1.3}
+.galv text{font-family:var(--f-mono);font-size:10px;fill:var(--fg3)}
+.galv .needle{stroke:var(--bad);stroke-width:2.2;stroke-linecap:round}
+.rxchip{display:flex;align-items:center;gap:10px}
+.rxchip svg{width:110px;height:28px;flex:none}
+.status{display:flex;align-items:center;gap:8px;font-size:13.5px}
+.galv svg{max-width:360px;margin:0 auto}
